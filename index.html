@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/NEON-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>NEON IA</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="assets/Logo-IA.png" alt="NEON IA Logo" class="navbar__logo" style="cursor: pointer;">
+        <button class="navbar__button" id="themeToggler"><i class='bx bx-sun'></i></button>
+    </nav>
+
+    <header class="header">
+        <div class="header__title">
+    <h1 data-text="Olá, Caio!">Olá, Caio!</h1>
+    <h2>Como eu posso te ajudar hoje?</h2>
+</div>
+        <div class="suggests">
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Dê dicas para ajudar as crianças a terminar o dever de casa no prazo.
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-stopwatch'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Ajude-me a escrever um e-mail de ausência do escritório.
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-edit-alt'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Dê-me frases para aprender um novo idioma.
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-compass'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Mostre-me como construir algo manualmente.
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bx-wrench'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="chats"></section>
+
+    <section class="prompt">
+        <form action="#" class="prompt__form" novalidate>
+            <div class="prompt__input-wrapper">
+                <input type="text" placeholder="Escreva o seu prompt..." class="prompt__form-input" required>
+                <button class="prompt__form-button" id="sendButton">
+                    <i class='bx bx-send'></i>
+                </button>
+                <button class="prompt__form-button" id="deleteButton">
+                    <i class='bx bx-trash'></i>
+                </button>
+            </div>
+        </form>
+        <p class="prompt__disclaim">
+            Website feito interamente por Caio Rodrigues - IA-API by google GEMINI.
+        </p>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
